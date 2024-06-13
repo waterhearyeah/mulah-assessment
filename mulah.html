@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mulaht</title>
+    <style>
+        table td{
+            width: 200px;
+            border: 1px solid black;
+
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td>Index #</td>
+            <td>Value</td>
+        </tr>
+        <tr>
+            <td>A1</td>
+            <td>41</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td>63</td>
+        </tr>
+        <tr>
+            <td>A5</td>
+            <td id="A5">2</td>
+        </tr>
+        <tr>
+            <td>A6</td>
+            <td>53</td>
+        </tr>
+        <tr>
+            <td>A7</td>
+            <td id="A7">5</td>
+        </tr>
+        <tr>
+            <td>A8</td>
+            <td>57</td>
+        </tr>
+        <tr>
+            <td>A9</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td>A10</td>
+            <td>93</td>
+        </tr>
+        <tr>
+            <td>A11</td>
+            <td>28</td>
+        </tr>
+        <tr>
+            <td>A12</td>
+            <td id="A12">3</td>
+        </tr>
+        <tr>
+            <td>A13</td>
+            <td id="A13">90</td>
+        </tr>
+        <tr>
+            <td>A14</td>
+            <td>39</td>
+        </tr>
+        <tr>
+            <td >A15</td>
+            <td id="A15">80</td>
+        </tr>
+        <tr>
+            <td>A16</td>
+            <td>88</td>
+        </tr>
+        <tr>
+            <td>A17</td>
+            <td>49</td>
+        </tr>
+        <tr>
+            <td>A18</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td>A19</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td>A20</td>
+            <td id="A20">28</td>
+        </tr>
+    </table>
+    
+    <table>
+        <tr>
+            <td>Category</td>
+            <td>Value</td>
+        </tr>
+        <tr>
+            <td>Alpha</td>
+            <td id="numA"></td>
+        </tr>
+        <tr>
+            <td>Beta</td>
+            <td id="numB"></td>
+        </tr>        
+        <tr>
+            <td>Charlie</td>
+            <td id="numC"></td>
+        </tr>
+    </table>
+    <script>
+        const numA = parseInt(document.getElementById("A5").innerText) + parseInt(document.getElementById("A20").innerText);
+        const numB = parseInt(document.getElementById("A15").innerText) / parseInt(document.getElementById("A7").innerText);
+        const numC = parseInt(document.getElementById("A13").innerText) * parseInt(document.getElementById("A12").innerText);
+        document.getElementById("numA").innerText = numA;
+        document.getElementById("numB").innerText = numB;
+        document.getElementById("numC").innerText = numC;
+    </script>
+</body>
+</html>
